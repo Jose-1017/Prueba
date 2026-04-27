@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio 3 — Formulario de contacto</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <form>
+    <h3>Contáctanos</h3>
+
+    <div class="field">
+      <label>Nombre</label>
+      <input type="text" placeholder="Tu nombre">
+    </div>
+
+    <div class="field">
+      <label>Email</label>
+      <input type="email" placeholder="correo@ejemplo.com">
+    </div>
+
+    <!-- CAMBIO 1: campo Teléfono entre Email y Mensaje -->
+    <div class="field">
+      <label>Teléfono</label>
+      <input type="tel" placeholder="300 000 0000">
+    </div>
+
+    <div class="field">
+      <label>Mensaje</label>
+      <textarea placeholder="Escribe tu mensaje..."></textarea>
+    </div>
+
+    <!-- CAMBIO 2: botón verde ancho completo (definido en CSS) -->
+    <button type="submit">Enviar mensaje</button>
+  </form>
+</body>
+</html>

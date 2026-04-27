@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* CLAVE: position relative convierte .card en el "ancla" de la etiqueta */
+.card {
+  background: white;
+  border-radius: 12px;
+  width: 240px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+/* CAMBIO 1: etiqueta flotante en esquina superior derecha */
+.etiqueta {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: #dc2626;
+  color: white;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 99px;
+}
+
+.img-placeholder {
+  background: #e0e7ff;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6366f1;
+  font-size: 13px;
+}
+
+.body {
+  padding: 16px;
+}
+
+.category {
+  font-size: 11px;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+}
+
+.name {
+  font-size: 16px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 8px;
+}
+
+/* CAMBIO 2: contenedor de los dos precios en fila */
+.precios {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* CAMBIO 2: precio original tachado */
+.precio-original {
+  font-size: 14px;
+  color: #aaa;
+  text-decoration: line-through;
+}
+
+.precio {
+  font-size: 22px;
+  font-weight: 700;
+  color: #2563eb;
+}
+
+button {
+  margin-top: 14px;
+  width: 100%;
+  background: #111;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 13px;
+  cursor: pointer;
+}
