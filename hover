@@ -1,159 +1,30 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: linear-gradient(90deg, #7a0000 0%, #000000 70%);
-  color: #ffffff;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
+# Shattered Riffs - Rock Band Landing Page
 
-header {
-  background-color: #000000;
-  padding: 10px 20px;
-}
+## Description
+This project is a landing page for a rock band called "Shattered Riffs". 
+It showcases the band's identity, music style, and upcoming events. 
+The goal is to attract users and promote live concerts with a strong visual style.
 
-.header__content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
+## Technologies Used
+- HTML5
+- CSS3
 
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 1.3rem;
-}
+## Project Structure
+- index.html → Main structure of the website
+- style.css → Styles and layout
+- assets/ → Images and icons (optional)
 
-.logo__img {
-  height: 80px;
-}
+## Features
+- Hero section with band promotion
+- Events section with a table of upcoming concerts
+- About section with band information and influences
+- Multimedia section with images
+- Footer with contact and social links
+- Responsive design using media queries
 
-.nav__list {
-  display: flex;
-  list-style: none;
-  gap: 20px;
-  padding: 0;
-}
+## How to Run
+1. Download or clone the project
+2. Open the `index.html` file in your browser
 
-.nav__list a {
-  color: #ccc;
-  text-decoration: none;
-  font-size: 1rem;
-}
-
-.nav__list a:hover {
-  color: red;
-}
-
-main {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.container {
-  width: 100%;
-  max-width: 1000px;
-  padding: 40px 20px;
-}
-
-.hero {
-  text-align: center;
-  padding: 80px 20px;
-}
-
-.events__table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
-}
-
-th, td {
-  border: 1px solid #000;
-  padding: 10px;
-}
-
-th {
-  background-color: #000;
-}
-
-.about__content {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-}
-
-.about__content img {
-  width: 40%;
-  border-radius: 5px;
-}
-
-.media__grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
-}
-
-.media__grid img {
-  width: 100%;
-  height: auto;
-  border-radius: 5px;
-}
-
-footer {
-  border-top: 1px solid #333;
-  padding: 20px;
-  background-color: #000;
-  text-align: center;
-}
-
-.footer-grid {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-}
-
-.col {
-  flex: 1;
-}
-
-.social {
-  list-style: none;
-  padding: 0;
-}
-
-.social a {
-  color: #aaa;
-  text-decoration: none;
-}
-
-.social a:hover {
-  color: white;
-}
-
-@media (max-width: 768px) {
-  .header__content {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .about__content {
-    flex-direction: column;
-  }
-
-  .about__content img {
-    width: 100%;
-  }
-
-  .media__grid {
-    grid-template-columns: 1fr;
-  }
-
-  .footer-grid {
-    flex-direction: column;
-    text-align: center;
-  }
-}
+## Author
+- Shattered Riffs Project
