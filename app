@@ -137,6 +137,18 @@
     </div>
 </section>
 
+<section id="social" class="social-section container">
+    <h2>Follow Us</h2>
+    <p>Stay connected with us on our social media platforms.</p>
+
+    <ul class="social-links">
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Spotify</a></li>
+        <li><a href="#">YouTube</a></li>
+        <li><a href="#">Facebook</a></li>
+    </ul>
+</section>
+
 <footer id="contact">
     <div class="footer-grid">
         <div class="col">
