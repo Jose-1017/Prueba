@@ -1,0 +1,148 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+   background: #7a0000;
+background: linear-gradient(90deg, rgba(122, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 69%);
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #000000;
+}
+
+.header__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: white;
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.logo__img {
+  height: 200px;
+  width: auto;
+}
+
+.nav__list {
+  display: flex;
+  list-style: none;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav__list a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+
+.nav__list a:hover {
+  color: red;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  box-sizing: border-box;
+}
+
+.hero {
+  width: 100%;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.events__table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 3px solid #000000;
+  padding: 15px;
+  text-align: left;
+}
+
+th {
+  background-color: #000000;
+}
+
+.about__content {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.about__content img {
+  width: 40%;
+  border-radius: 8px;
+}
+
+.media__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 100%;
+}
+
+.media__grid img {
+  width: 100%;
+  object-fit: fill;
+  border-radius: 4px;
+  height: auto;
+}
+
+footer {
+  border-top: 1px solid #333;
+  padding: 40px 32px;
+  background-color: #000;
+}
+
+.footer-grid {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+.col {
+  flex: 1;
+}
+
+.social {
+  list-style: none;
+  padding: 0;
+}
+
+.social a {
+  color: #aaa;
+  text-decoration: none;
+}
+
+.social a:hover {
+  color: white;
+}
