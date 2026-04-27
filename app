@@ -112,6 +112,31 @@
 
 </main>
 
+<section id="discography" class="discography container">
+    <h2>Discography</h2>
+    <p>Explore our latest releases and albums.</p>
+
+    <div class="discography__grid">
+        <div class="album">
+            <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4" alt="Album 1">
+            <h3>Broken Strings</h3>
+            <p>2020</p>
+        </div>
+
+        <div class="album">
+            <img src="https://images.unsplash.com/photo-1497032205916-ac775f0649ae" alt="Album 2">
+            <h3>Midnight Noise</h3>
+            <p>2022</p>
+        </div>
+
+        <div class="album">
+            <img src="https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2" alt="Album 3">
+            <h3>Echoes of Fire</h3>
+            <p>2025</p>
+        </div>
+    </div>
+</section>
+
 <footer id="contact">
     <div class="footer-grid">
         <div class="col">
