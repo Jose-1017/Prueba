@@ -1,144 +1,162 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Shattered Riffs</title>
-    <link rel="shortcut icon" href="./assets/icons/logo.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(90deg, #7a0000 0%, #000000 70%);
+  color: #ffffff;
+}
 
-    <!-- HEADER -->
-    <header class="header">
-        <div class="container header__content">
-            <img src="https://w0.peakpx.com/wallpaper/413/118/HD-wallpaper-metallica-band-black-heavy-metal-music-rock-silver-thumbnail.jpg" alt="Logo" class="logo__img">
-            <h1 class="logo">Shattered Riffs link</h1>
-            <!-- Nav for desktop / hamburger for mobile -->
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li><a href="#events">Events</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#media">Media</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+header {
+  background-color: #000;
+  padding: 10px 20px;
+}
 
-        </div>
-    </header>
+.header__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
-    <main>
+.logo__img {
+  height: 80px;
+}
 
-        <!-- HERO -->
-        <section class="hero">
-            <section>
-                <div class="hero__overlay">
-                <h2>Rock the Night</h2>
-                <p>Upcoming Tour</p>
-                <a href="#events" class="btn">View Events</a>
-            </div>
-            </section>
-            
-        </section>
+.nav__list {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
 
-        <!-- EVENTS -->
-        <section id="events" class="events container">
-            <h2>Upcoming Events</h2>
+.nav__list a {
+  color: #ccc;
+  text-decoration: none;
+}
 
-            <!-- Extra points: table -->
-            <table class="events__table">
-                <thead>
-                    <tr>
-                        <th>Date</th>
-                        <th>City</th>
-                        <th>Venue</th>
-                        <th>Tickets</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>15 May</td>
-                        <td>Madrid</td>
-                        <td>Sala Sol</td>
-                        <td><button>Buy</button></td>
-                    </tr>
-                    <tr>
-                        <td>18 May</td>
-                        <td>Barcelona</td>
-                        <td>Razzmatazz</td>
-                        <td><button>Buy</button></td>
-                    </tr>
-                    <tr>
-                        <td>22 May</td>
-                        <td>Valencia</td>
-                        <td>Moon Club</td>
-                        <td><button>Buy</button></td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+.nav__list a:hover {
+  color: red;
+}
 
-        <!-- ABOUT -->
-        <section id="about" class="about container">
-            <h2>About the Band</h2>
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
 
-            <div class="about__content">
-               <section class="hero">
-                <img src="https://thumbs.dreamstime.com/b/banda-de-rock-roll-multi%C3%A9tnica-joven-que-realiza-m%C3%BAsica-de-heavy-93486888.jpg" alt="Band photo">
-                <div class="texto">
-                    <h2>Who are we?</h2>
-                    <p> Shattered Riffs is a high-energy rock band known for powerful live performances
-                        and raw sound.</p>
-                </div>                 
-            </section>
-            <section>
-                 <h3>Our Influences</h3>
-                    <ul>
-                        <li>Classic Rock</li>
-                        <li>Hard Rock</li>
-                        <li>Alternative</li>
-                    </ul>
-            </section>
-           
-        </section>
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: url('https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2') no-repeat center/cover;
+}
 
-        <!-- MEDIA -->
-        <section id="media" class="media container">
-            <h2>Multimedia</h2>
+.hero__overlay {
+  background-color: rgba(0,0,0,0.6);
+  padding: 40px;
+}
 
-            <div class="media__grid">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTz5xKvxzSnE50hBV4RZ75JIM16ML7VHYSmHw&s" alt="">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH7bNa9m54v39pfqteAeRngXAE73TuVpX2Gw&s" alt="">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsMVpqc5AT5eLUZOSdusjuL5kaPrmIudsAeA&s" alt="">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL33qOWk8mIgp4moGWXZ-CqgdnUpwY7iC_wQ&s" alt="">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRdlcBK4q--wZbOwmW-daqOBVaSknAsmIp5g&s" alt="">
-             
-            </div>
-        </section>
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: red;
+  color: white;
+  text-decoration: none;
+}
 
-    </main>
+.events p,
+.media p {
+  color: #ccc;
+}
 
-    <!-- FOOTER -->
+.events__table {
+  width: 100%;
+  border-collapse: collapse;
+}
 
-    <footer>
-  <div class="footer-grid">
-    <div class="col">
-      <p>© <span id="year"></span> Shattered Riffs</p>
-    </div>
-    <div class="col">
-      <h4>Enlaces</h4>
-      <ul class="social">
-                <li><a href="#">Instagram</a></li>
-                <li><a href="#">Spotify</a></li>
-                <li><a href="#">YouTube</a></li>
-            </ul>
-    </div>
-    <div class="col">
-      <h4>Contacto</h4>
-      <p>correo@misitio.com</p>
-      <p>+57 300 000 0000</p>
-    </div>
-</footer>
+th, td {
+  border: 1px solid black;
+  padding: 10px;
+}
 
-</body>
-</html>
+th {
+  background: black;
+}
+
+button {
+  background: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+}
+
+.about__content {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.about__content img {
+  width: 40%;
+}
+
+.media__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.media__grid img {
+  width: 100%;
+}
+
+footer {
+  background: black;
+  padding: 20px;
+}
+
+.footer-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.social {
+  list-style: none;
+  padding: 0;
+}
+
+.social a {
+  color: #aaa;
+  text-decoration: none;
+}
+
+.social a:hover {
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .header__content {
+    flex-direction: column;
+  }
+
+  .about__content {
+    flex-direction: column;
+  }
+
+  .about__content img {
+    width: 100%;
+  }
+
+  .media__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-grid {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1200px;
+  }
+}
