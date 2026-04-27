@@ -1,8 +1,7 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-   background: #7a0000;
-background: linear-gradient(90deg, rgba(122, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 69%);
+  background: linear-gradient(90deg, #7a0000 0%, #000000 70%);
   color: #ffffff;
   display: flex;
   flex-direction: column;
@@ -11,6 +10,7 @@ background: linear-gradient(90deg, rgba(122, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 69%);
 
 header {
   background-color: #000000;
+  padding: 10px 20px;
 }
 
 .header__content {
@@ -22,30 +22,25 @@ header {
 .logo {
   display: flex;
   align-items: center;
-  gap: 15px;
-  color: white;
-  margin: 0;
-  font-size: 1.5rem;
+  gap: 10px;
+  font-size: 1.3rem;
 }
 
 .logo__img {
-  height: 200px;
-  width: auto;
+  height: 80px;
 }
 
 .nav__list {
   display: flex;
   list-style: none;
-  gap: 24px;
-  margin: 0;
+  gap: 20px;
   padding: 0;
 }
 
 .nav__list a {
   color: #ccc;
   text-decoration: none;
-  font-size: 1.1rem;
-  transition: color 0.3s;
+  font-size: 1rem;
 }
 
 .nav__list a:hover {
@@ -57,21 +52,17 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
 }
 
 .container {
   width: 100%;
   max-width: 1000px;
-  margin: 0 auto;
-  padding: 60px 20px;
-  box-sizing: border-box;
+  padding: 40px 20px;
 }
 
 .hero {
-  width: 100%;
   text-align: center;
-  padding: 100px 20px;
+  padding: 80px 20px;
 }
 
 .events__table {
@@ -81,52 +72,48 @@ main {
 }
 
 th, td {
-  border: 3px solid #000000;
-  padding: 15px;
-  text-align: left;
+  border: 1px solid #000;
+  padding: 10px;
 }
 
 th {
-  background-color: #000000;
+  background-color: #000;
 }
 
 .about__content {
   display: flex;
-  gap: 40px;
+  gap: 20px;
   align-items: center;
 }
 
 .about__content img {
   width: 40%;
-  border-radius: 8px;
+  border-radius: 5px;
 }
 
 .media__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  width: 100%;
+  gap: 15px;
 }
 
 .media__grid img {
   width: 100%;
-  object-fit: fill;
-  border-radius: 4px;
   height: auto;
+  border-radius: 5px;
 }
 
 footer {
   border-top: 1px solid #333;
-  padding: 40px 32px;
+  padding: 20px;
   background-color: #000;
+  text-align: center;
 }
 
 .footer-grid {
   display: flex;
   justify-content: space-between;
-  max-width: 1200px;
-  margin: 0 auto;
-  gap: 40px;
+  gap: 20px;
 }
 
 .col {
@@ -145,4 +132,28 @@ footer {
 
 .social a:hover {
   color: white;
+}
+
+@media (max-width: 768px) {
+  .header__content {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .about__content {
+    flex-direction: column;
+  }
+
+  .about__content img {
+    width: 100%;
+  }
+
+  .media__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-grid {
+    flex-direction: column;
+    text-align: center;
+  }
 }
